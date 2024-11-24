@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css" integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+
+    <style>
+        body{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            background-color: #CDDAFC;
+        }
+
+        .container{
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+            text-align: center;
+            width: 450px;
+            height: 500px;
+            border-radius: 25px;
+            background-color: #ffffff;
+        }
+
+        .inputs{
+            margin: 15px;
+        }
+
+        #login-text{
+            margin-top: 20px;
+            font-size: 35px;
+        }
+
+        input{
+            margin: 10px;
+            padding: 7px;
+            width: 70%;
+            border: none;
+            outline: none;
+            border-radius: 10px;
+            font-size: 15px;
+            background-color: #EEEEEE;
+        }
+
+        label{
+            margin: 10px;
+            font-size: 18px;
+        }
+
+        .sign-up{
+            margin: 15px;
+        }
+
+        #sign-up{
+            padding: 10px;
+            width: 150px;
+            font-size: 15px;
+            background-color: #CDDAFC;
+            color: #000;
+            border: none;
+            border-radius: 10px;
+        }
+
+        #login{
+            font-size: 17px;
+            color: #000;
+        }
+
+        #login span{
+            text-decoration: underline;
+        }
+
+        #option-signups{
+            padding: 16px;
+            width: 50px;
+            background: none;
+            border: 2px solid #000;
+            border-radius: 10px;
+        }
+
+        #option-signups i{
+            font-size: 17px;
+        }
+    </style>
+</head>
+<body>
+    
+    <div class="container">
+        <h1 id="login-text">
+            Sign-Up
+        </h1>
+        <div class="options">
+            <button id="option-signups"><i class="fa-brands fa-google"></i></button>
+            <button id="option-signups"><i class="fa-brands fa-facebook"></i></button>
+            <button id="option-signups"><i class="fa-brands fa-x-twitter"></i></button>
+            <button id="option-signups"><i class="fa-brands fa-youtube"></i></button>
+        </div>
+        <div class="inputs">
+            <label for="e-mail">Type your E-Mail here</label><br>
+            <input type="text" id="e-mail" placeholder="Email"><br>
+            <label for="username">Type your Username here</label><br>
+            <input type="text" id="username" placeholder="Username"><br>
+            <label for="password">Type your Password here</label><br>
+            <input type="password" id="password" placeholder="Password"><br>
+        </div>
+        <div class="link">
+            <a href="login.html" id="login">Already have an account? <span>Log In</span></a>
+        </div>
+        <div class="sign-up">
+            <button id="sign-up">Sign-up</button>
+        </div>
+    </div>
+</body>
+</html>

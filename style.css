@@ -1,0 +1,1119 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: "Poppins", sans-serif;
+}
+
+.navbar{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #007BFF;
+}
+
+a, #nav-links {
+    text-decoration: none; 
+    color: #fff;        
+    position: relative;
+    margin: 10px;
+    font-size: 20px;    
+}
+
+a::after {
+    content: "";                
+    position: absolute;         
+    left: 0;                   
+    bottom: -2px;              
+    width: 0;                   
+    height: 2px;                
+    background-color: #fff; 
+    transition: width 0.3s ease; 
+}
+
+a:hover::after {
+    width: 100%; 
+}
+
+#navbar-text{
+    margin-left: 10px;
+    font-size: 30px;
+}
+
+#navbar-text span{
+    color: #fff;
+}
+
+.buttons{
+    margin: 15px;
+}
+
+.buttons button{
+    padding: 15px;
+    margin: 5px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    border-radius: 10px;
+    background-color: #fff;
+    transition: all 0.3s ease;
+}
+
+button a{
+    color: #007BFF;
+    font-size: 17px;
+    text-decoration: none;
+}
+
+button:hover{
+    background-color: #0b56a7;
+    color: white;
+}
+
+.header{
+    background-image: url("https://t4.ftcdn.net/jpg/03/19/74/61/360_F_319746107_n99b20pTyXt8xYJXQqVBI5dJVttUANFn.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 70vh;
+}
+
+#header{
+    background-color: rgba(0,0,0, 0.5);
+    border-radius: 10px;
+}
+
+#header-h1{
+    color: white;
+    font-size: 40px;
+    margin-top: 30px;
+}
+
+#header-p{
+    color: white;
+    font-size: 30px;
+    margin: 15px;
+}
+
+#header-reasons{
+    text-align: center;
+}
+
+.why-choose-us{
+    background-color: #007BFF;
+    color: #fff;
+    height: 50vh;
+}
+
+.reasons{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 70%;
+    margin: 20px;
+}
+
+.reason{
+    width: auto;
+    height: auto;
+    border: 2px solid #fff;
+    border-radius: 10px;
+    margin: 10px;
+    padding: 10px;
+}
+
+#reason-p{
+    font-size: 17px;
+    margin: 10px;
+}
+
+#reason-h1{
+    font-size: 30px;
+    margin: 10px;
+}
+
+.useAI{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 60vh;
+    margin: 0px;
+    background-color: #0b56a7;
+}
+
+#useAI{
+    display: flex;
+    flex-direction: column;
+    width: 50px;
+    border-radius: 10px;
+}
+
+#useAI, #useAI-p{
+    margin: 10px;
+    width: 80%;
+    color: #fff;
+    font-size: 18px;
+}
+
+#useAI, #useAI-h1{
+    color: white;
+    font-size: 25px;
+    margin-left: 30px;
+    margin-top: 20px;
+}
+
+#image{
+    width: 60%;
+    border-radius: 10px;
+    margin-left: 20px;
+}
+
+.top-visited-places{
+    background-color: #007BFF;
+    color: white;
+    display: flex;
+    align-items: stretch;
+    flex-direction: row;
+}
+
+#header-info{
+    text-align: center;
+    font-size: 25px;
+    background-color: #007BFF;
+    color: white;
+}
+
+.places{
+    margin: 20px;
+    padding: 10px;
+    border: 2px solid #fff;
+    border-radius: 10px;
+    width: auto;
+    height: auto;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+}
+
+.places:hover{
+    background-color: #0b56a7;
+}
+
+#places-header{
+    margin: 10px;
+    text-align: center;
+}
+
+#places-paragraph{
+    font-size: 16px;
+}
+
+.footer{
+    background-color: #0b56a7;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 30vh;
+}
+
+#footer-name{
+    margin: 20px;
+}
+
+.sub{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin: 20px;
+}
+
+#newsletter{
+    font-size: 25px;
+    margin: 10px;
+}
+
+#email-input{
+    padding: 7px;
+    margin: 10px;
+    width: 220px;
+    border: none;
+    outline: none;
+    border-radius: 10px;
+}
+
+#submit{
+    padding: 15px;
+    margin: 5px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    border-radius: 10px;
+    background-color: #fff;
+    color: #0b56a7;
+    transition: all 0.3s ease;
+}
+
+#submit:hover{
+    background-color: #007BFF;
+    color: #fff;
+}
+
+/* About page CSS*/
+
+.intro{
+    text-align: center;
+    color: white;
+    margin: 10px;
+}
+
+.about{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#about-paragraph{
+    display: flex;
+    align-items: center;
+    color: white;
+    height: 300px;
+    width: 70%;
+    font-size: 23px;
+    background-color: #007BFF;
+    margin: 20px;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+#img{
+    margin: 20px;
+    width: 400px;
+    height: 400px;
+    object-fit: cover;
+}
+
+#pricing-header{
+    color: white;
+    margin: 10px;
+    text-align: center;
+}
+
+.pricing{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    margin: 50px;
+}
+
+#pricing{
+    display: flex;
+    flex-direction: column;
+    margin: 30px;
+    padding: 16px;
+    width: 500px;
+    height: 550px;
+    border: 2px solid #fff;
+    border-radius: 10px;
+    cursor: pointer;
+    color: white;
+}
+
+.button{
+    margin-top: auto; 
+    text-align: center; 
+}
+
+#buy-button {
+    padding: 10px;
+    width: 300px;
+    font-size: 16px;
+    background-color: #007BFF;
+    border: 2px solid #fff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#pricing-h3{
+    margin: 10px;
+    width: 100%;
+}
+
+#pricing-p{
+    width: 100%;
+    margin: 5px;
+    font-size: 17px;
+}
+
+li{
+    margin: 10px;
+    font-size: 14px;
+}
+
+.faq-header {
+    text-align: center;
+    padding: 20px;
+    background-color: #0b56a7;
+    color: white;
+}
+
+.faq-header h1 {
+    font-size: 2rem;
+    color: white;
+}
+
+.faq-section {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.faq-item {
+    margin-bottom: 10px;
+    border-bottom: 1px solid #ddd;
+}
+
+.faq-question {
+    background-color: #007BFF;
+    border-radius: 10px;
+    color: white;
+    padding: 15px;
+    width: 100%;
+    text-align: left;
+    border: none;
+    cursor: pointer;
+    font-size: 1.2rem;
+    transition: all 0.3s ease;
+}
+
+.faq-question:hover {
+    background-color: #0b56a7;
+}
+
+.faq-answer {
+    padding: 10px 15px;
+    display: none;
+    background-color: #f9f9f9;
+}
+
+.cta-section {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.cta-section a {
+    color: #007BFF;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+@media only screen and (max-width: 1325px) {
+    #header-reasons{
+        font-size: 20px;
+    }
+
+    .reason{
+        width: auto;
+    }
+
+    #reason-h1{
+        font-size: 20px;
+    }
+
+    #reason-p{
+        font-size: 15px;
+    }
+
+    #useAI-p{
+        font-size: 15px;
+    }
+
+    #useAI-h1{
+        font-size: 20px;
+    }
+
+    #header-h1{
+        font-size: 25px;
+    }
+
+    #header-p{
+        font-size: 15px;
+    }
+}
+
+@media only screen and (max-width: 1175px){
+    #reason-h1{
+        font-size: 16px;
+    }
+
+    #reason-p{
+        font-size: 13px;
+    }
+}
+
+@media only screen and (max-width: 1050px) {
+    #header-reasons{
+        font-size: 18px;
+    }
+
+    #reason-h1{
+        font-size: 17px;
+    }
+
+    #reason-p{
+        font-size: 12px;
+    }
+
+    .reason{
+        width: auto;
+    }
+
+    #useAI-p{
+        font-size: 10px;
+    }
+
+    #useAI-h1{
+        font-size: 15px;
+    }
+
+    #image{
+        width: 40%;
+    }
+
+    .useAI{
+        height: 40vh;
+    }
+
+    #header-places{
+        font-size: 20px;
+    }  
+
+    .top-visited-places{
+        display: grid;
+
+    }
+}
+
+@media only screen and (max-width:920px){
+    #useAI-p{
+        font-size: 10px;
+    }
+
+    #useAI-h1{
+        font-size: 13px;
+    }
+
+    #footer-name{
+        font-size: 20px;
+    }
+
+    #newsletter{
+        font-size: 15px;
+    }
+
+    #email-input{
+        padding: 2px;
+        margin: 5px;
+    }
+
+    #submit{
+        padding: 5px;
+    }
+}
+
+@media only screen and (max-width: 860px){
+    .reason{
+        padding: 6px;
+        margin: 6px;
+        width: auto;
+        font-size: 13px;
+    }
+
+    #header-reasons{
+        font-size: 15px;
+    }
+
+    #reason-h1{
+        font-size: 12px;
+    }
+
+    #reason-p{
+        font-size: 8px;
+    }
+
+    .why-choose-us{
+        height: 30vh;
+    }
+
+    #header-places{
+        font-size: 13px;
+    }
+
+    #places-header{
+        font-size: 13px;
+    }
+
+    #places-paragraph{
+        font-size: 10px;
+    }
+
+    #navbar-text{
+        font-size: 25px;
+    }
+
+    nav{
+        width: auto;
+    }
+
+    #nav-links{
+        font-size: 17px;
+    }
+
+    #login, #signup{
+        padding: 5px;
+    }
+
+    #useAI-h1{
+        font-size: 10px;
+        margin: 10px;
+    }
+
+    #useAI-p{
+        font-size: 8px;
+    }
+}
+
+@media only screen and (max-width:760px){
+    #header-reasons{
+        font-size: 15px;
+    }
+
+    #useAI-p{
+        font-size: 8px;
+    }
+
+    #useAI-h1{
+        font-size: 10px;
+    }
+
+    #reason-h1{
+        font-size: 10px;
+    }
+
+    #reason-p{
+        font-size: 6px;
+    }
+
+    .why-choose-us{
+        height: 26vh;
+    }
+}
+
+@media only screen and (max-width: 720px){
+    .navbar{
+        display: flex;
+        flex-direction: column;
+    }
+
+    #navbar-text{
+        font-size: 20px;
+    }
+
+    #nav-links{
+        font-size: 15px;
+    }
+
+    #login, .sign-up{
+        padding: 3px;
+    }
+
+    #header-h1{
+        font-size: 20px;
+    }
+
+    #header-p{
+        font-size: 13px;
+    }
+
+
+    .about{
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+@media only screen and (max-width: 650px){
+    .reason{
+        padding: 5px;
+    }
+
+    #useAI-p{
+        font-size: 7px;
+    }
+
+    #useAI-h1{
+        font-size: 8px;
+        margin: 10px;
+    }
+
+    #header-places{
+        font-size: 10px;
+    }
+}
+
+@media only screen and (max-width: 700px) {
+    #useAI-p{
+        font-size: 6px;
+    }
+
+    .reason{
+        padding: 4px;
+        margin: 10px;
+    }
+
+    #reason-h1{
+        font-size: 8px;
+    }
+
+    #reason-p{
+        font-size: 4px;
+    }
+}
+
+@media only screen and (max-width: 540px){
+    .reasons{
+        display: grid;
+    }
+
+    .why-choose-us{
+        height: 70vh;
+        margin: 0;
+    }
+
+    #reason-h1{
+        font-size: 10px;
+    }
+
+    #reason-p{
+        font-size: 8px;
+    }
+
+    #navbar-text{
+        font-size: 15px;
+    }
+
+    #nav-links{
+        font-size: 10px;
+    }
+
+    .navbar{
+        display: flex;
+        flex-direction: column;
+    }
+
+    nav{
+        flex-direction: column;
+    }
+
+    #login, #sign-up{
+        margin: 5px;
+        padding: 5px;
+    }
+
+    .footer{
+        display: flex;
+        flex-direction: column;
+        height: 40vh;
+    }
+}
+
+@media only screen and (max-width: 460px){
+    .useAI{
+        display: flex;
+        flex-direction: column;
+        height: auto;
+    }
+
+    #image{
+        width: 150px;
+        height: 150px;
+    }
+
+    #header{
+        width: 50%;
+    }
+
+    #about-paragraph{
+        margin: 10px;
+    }
+}
+
+@media screen and (max-width: 1200px) {
+    .navbar {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 15px;
+        padding: 20px;
+    }
+
+    nav {
+        flex-wrap: wrap;
+        gap: 20px;
+    }
+
+    nav a {
+        font-size: 18px;
+    }
+
+    .buttons {
+        flex-direction: row;
+        gap: 10px;
+    }
+
+    #login, #signup {
+        font-size: 16px;
+        padding: 10px 20px;
+    }
+
+    .about-us {
+        grid-template-columns: 1fr;
+        gap: 30px;
+        padding: 20px;
+    }
+
+    #about-paragraph {
+        font-size: 16px;
+        text-align: justify;
+    }
+
+    #img {
+        max-width: 300px;
+        width: 90%; 
+        margin: 0 auto;
+    }
+
+    .intro {
+        padding: 15px;
+        text-align: center;
+    }
+
+    #about-us {
+        font-size: 28px;
+    }
+}
+
+@media screen and (max-width: 1235px) {
+    .navbar {
+        flex-wrap: wrap;
+        justify-content: space-around;
+        gap: 15px;
+    }
+
+    nav {
+        gap: 10px;
+    }
+
+    nav a {
+        font-size: 18px;
+    }
+
+    #pricing-header {
+        font-size: 32px;
+        text-align: center;
+    }
+
+    .pricing {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px;
+        padding: 20px;
+    }
+
+    #pricing {
+        padding: 15px;
+        font-size: 16px;
+    }
+
+    #pricing-h3 {
+        font-size: 22px;
+    }
+
+    ul {
+        padding: 0;
+    }
+
+    #buy-button {
+        padding: 10px 20px;
+        font-size: 16px;
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    .pricing {
+        grid-template-columns: 1fr;
+        padding: 15px;
+    }
+
+    #pricing-header {
+        font-size: 28px;
+    }
+
+    #pricing {
+        padding: 10px;
+    }
+
+    #pricing-h3 {
+        font-size: 20px;
+    }
+
+    #pricing-p {
+        font-size: 14px;
+    }
+
+    #buy-button {
+        font-size: 14px;
+        padding: 8px 16px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .navbar {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    nav {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    nav a {
+        font-size: 16px;
+    }
+
+    .pricing {
+        padding: 5px;
+    }
+
+    #pricing {
+        margin: 0 auto;
+    }
+
+    #pricing-h3 {
+        font-size: 18px;
+    }
+
+    #pricing-p {
+        font-size: 12px;
+    }
+
+    #buy-button {
+        font-size: 12px;
+        padding: 6px 12px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    #pricing-header {
+        font-size: 24px;
+        padding: 10px;
+    }
+
+    #pricing-h3 {
+        font-size: 16px;
+    }
+
+    #pricing-p {
+        font-size: 11px;
+    }
+
+    #buy-button {
+        font-size: 10px;
+        padding: 5px 10px;
+    }
+
+    .pricing{
+        padding: 5px;
+    }
+}
+
+@media screen and (max-width: 1235px) {
+    .navbar {
+        flex-wrap: wrap;
+        justify-content: space-around;
+        gap: 15px;
+    }
+
+    nav {
+        gap: 10px;
+    }
+
+    nav a {
+        font-size: 18px;
+    }
+
+    .faq-header h1 {
+        font-size: 36px;
+        text-align: center;
+    }
+
+    .faq-header p {
+        font-size: 18px;
+        text-align: center;
+    }
+
+    .faq-section {
+        padding: 20px;
+    }
+
+    .faq-item {
+        padding: 15px;
+        font-size: 18px;
+    }
+
+    .cta-section p {
+        font-size: 18px;
+        text-align: center;
+    }
+}
+
+@media screen and (max-width: 1000px) {
+    .navbar {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    nav {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    nav a {
+        font-size: 16px;
+    }
+
+    .faq-header h1 {
+        font-size: 32px;
+    }
+
+    .faq-header p {
+        font-size: 16px;
+    }
+
+    .faq-item {
+        font-size: 16px;
+        padding: 10px;
+    }
+
+    .cta-section p {
+        font-size: 16px;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    .faq-header h1 {
+        font-size: 28px;
+    }
+
+    .faq-header p {
+        font-size: 14px;
+    }
+
+    .faq-item {
+        font-size: 14px;
+    }
+
+    .faq-question {
+        font-size: 16px;
+    }
+
+    .faq-answer {
+        font-size: 14px;
+    }
+
+    .cta-section p {
+        font-size: 14px;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .navbar {
+        gap: 20px;
+    }
+
+    nav a {
+        font-size: 14px;
+        padding: 10px;
+    }
+
+    .faq-header h1 {
+        font-size: 24px;
+        padding: 10px;
+    }
+
+    .faq-header p {
+        font-size: 12px;
+    }
+
+    .faq-item {
+        font-size: 14px;
+    }
+
+    .faq-question {
+        font-size: 14px;
+    }
+
+    .faq-answer {
+        font-size: 12px;
+    }
+
+    .cta-section p {
+        font-size: 12px;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .navbar {
+        gap: 10px;
+    }
+
+    nav {
+        flex-direction: column;
+    }
+
+    nav a {
+        font-size: 12px;
+        padding: 8px;
+    }
+
+    .faq-header h1 {
+        font-size: 20px;
+    }
+
+    .faq-header p {
+        font-size: 10px;
+    }
+
+    .faq-item {
+        font-size: 12px;
+    }
+
+    .faq-question {
+        font-size: 12px;
+    }
+
+    .faq-answer {
+        font-size: 10px;
+    }
+
+    .cta-section p {
+        font-size: 10px;
+    }
+}
