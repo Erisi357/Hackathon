@@ -809,6 +809,16 @@ li{
     }
 }
 
+@media screen and (max-width:1400px){
+    #pricing-h3{
+        font-size: 15px;
+    }
+
+    #pricing-p{
+        font-size: 13px;
+    }
+}
+
 @media screen and (max-width: 1235px) {
     .navbar {
         flex-wrap: wrap;
@@ -829,30 +839,11 @@ li{
         text-align: center;
     }
 
-    .pricing {
-        display: grid;
-        grid-template-columns: repeat(2, 1fr);
-        gap: 20px;
-        padding: 20px;
+    .pricing{
+        display: flex;
+        flex-direction: column;
     }
 
-    #pricing {
-        padding: 15px;
-        font-size: 16px;
-    }
-
-    #pricing-h3 {
-        font-size: 22px;
-    }
-
-    ul {
-        padding: 0;
-    }
-
-    #buy-button {
-        padding: 10px 20px;
-        font-size: 16px;
-    }
 }
 
 @media screen and (max-width: 1024px) {
